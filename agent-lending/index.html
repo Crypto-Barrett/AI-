@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="color-scheme" content="light"><title>Agent Lending | 交互产品 Demo V8</title>
+<meta name="color-scheme" content="light"><title>Agent Lending | 交互产品 Demo V9</title>
 <style>
 :root{--ink:#152a28;--muted:#657b77;--line:#e1eae4;--bg:#f5f8f6;--card:#fff;--deep:#103f38;--green:#197968;--pale:#eaf5ef;--amber:#aa711b;--red:#b54b42;--blue:#386d9b;--shadow:0 16px 40px #123e2b12}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:Inter,"PingFang SC","Microsoft YaHei",-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg);font-size:14px;line-height:1.6}button,input,select{font:inherit}button{cursor:pointer}a{color:var(--green)}.layout{display:grid;grid-template-columns:245px minmax(0,1fr);min-height:100vh}.side{background:#103f38;color:#fff;position:sticky;top:0;height:100vh;padding:27px 16px;display:flex;flex-direction:column}.brand{display:flex;align-items:center;gap:10px;padding:0 12px 25px;border-bottom:1px solid #ffffff24}.mark{background:#d7f1d7;color:#123e32;border-radius:12px;font-size:25px;font-weight:900;width:43px;height:43px;display:grid;place-items:center}.brand b{font-size:18px;line-height:1.1}.brand small{display:block;font-size:10px;color:#a9cbbd;margin-top:5px;letter-spacing:.06em}.nav{margin-top:24px;display:grid;gap:6px}.nav button{text-align:left;width:100%;border:0;background:transparent;color:#c3dfd5;padding:13px 14px;border-radius:10px;display:flex;gap:10px;align-items:center}.nav button.active,.nav button:hover{background:#ffffff1b;color:#fff}.nav button.active:before{content:'';position:absolute;left:0;width:3px;height:28px;background:#d7ebb7;border-radius:5px}.sidefoot{margin-top:auto;padding:12px;font-size:11px;color:#a4c2b9;border-top:1px solid #ffffff24}.main{min-width:0}.top{height:72px;border-bottom:1px solid var(--line);background:#fffffff2;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(18px,4vw,55px);gap:10px}.top strong{font-size:16px}.eyebrow{color:var(--green);font-weight:800;text-transform:uppercase;letter-spacing:.12em;font-size:11px}.top .flag{border:1px solid #bcdcca;background:#eaf7ef;color:#1a6752;border-radius:100px;padding:6px 12px;font-size:11px;font-weight:700}.content{padding:34px clamp(18px,4vw,55px) 95px;max-width:1500px;margin:0 auto}.page{display:none;animation:rise .2s ease}.page.active{display:block}@keyframes rise{from{opacity:.65;transform:translateY(4px)}to{opacity:1;transform:none}}h1{font-size:clamp(29px,3.3vw,44px);letter-spacing:-.045em;line-height:1.19;margin:10px 0 15px;font-weight:850}h2{font-size:20px;letter-spacing:-.025em;margin:0 0 15px}h3{font-size:15px;margin:0 0 10px}.lead{font-size:15px;line-height:1.85;color:#54706a;max-width:930px;margin:0 0 26px}.panel{background:var(--card);border:1px solid var(--line);border-radius:17px;padding:22px;box-shadow:var(--shadow);min-width:0}.stack{display:grid;gap:18px}.g2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.g3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.g4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.stat{padding:19px;border-radius:14px;background:white;border:1px solid var(--line)}.stat small{display:block;color:var(--muted);font-size:12px}.stat b{display:block;font-size:25px;margin:6px 0;font-variant-numeric:tabular-nums}.stat em{color:var(--green);font-size:11px;font-style:normal}.hero{background:linear-gradient(110deg,#103f38,#1b7061);color:white;border-radius:22px;padding:30px;margin-bottom:24px;position:relative;overflow:hidden}.hero:after{content:"A";position:absolute;right:40px;top:-80px;font-size:250px;opacity:.06;font-weight:1000}.hero .eyebrow{color:#b8dfc4}.hero h1{max-width:740px}.hero .lead{color:#cfe2d9;max-width:750px}.hero .actions{display:flex;gap:11px;flex-wrap:wrap}.btn{border:0;border-radius:11px;padding:10px 16px;font-weight:760;background:var(--deep);color:white;display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:41px}.btn.light{background:white;color:var(--deep)}.btn.line{background:white;color:var(--deep);border:1px solid #c8d9cc}.btn.warn{background:#fff2e6;color:#935e13;border:1px solid #efdbb6}.btn.danger{background:#fff0ef;color:#a63830;border:1px solid #f0cecb}.btn:disabled{opacity:.45;cursor:not-allowed}.btn:focus-visible,.nav button:focus-visible,.switch button:focus-visible{outline:3px solid #cca54a;outline-offset:2px}.pill{display:inline-flex;align-items:center;gap:5px;padding:4px 9px;border-radius:100px;background:#ecf6ee;color:#1c715e;font-size:11px;font-weight:800}.pill.yellow{background:#fff3da;color:#a36b14}.pill.red{background:#fcedeb;color:#a9453d}.pill.blue{background:#edf3fc;color:#336c9e}.muted{color:var(--muted)}.micro{font-size:12px;color:var(--muted)}.divider{border:0;border-top:1px solid var(--line);margin:20px 0}.fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.field{display:grid;gap:6px}.field label{font-weight:700;font-size:12px}.field input,.field select{border:1px solid #cfdbd5;border-radius:10px;background:white;padding:11px 12px;width:100%;min-width:0;color:var(--ink)}input[type=range]{padding:0;accent-color:#1d8b70}.result{border-radius:13px;background:#edf6ef;padding:16px;color:#164f42}.result.warn{background:#fff6e8;color:#85571a}.result.bad{background:#fff0ee;color:#a23c33}.result strong{font-size:19px}.flow{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}.flow .step{background:#f4f7f4;border:1px solid var(--line);border-radius:11px;padding:11px 9px;text-align:center;min-width:0}.flow .step b{font-size:11px;display:block}.flow .step span{font-size:11px;color:var(--muted)}.flow .step.done{background:#e5f5ed;border-color:#8fcaae}.flow .step.hold{background:#fff3e0;border-color:#e2c688}.flow .step.block{background:#ffebe8;border-color:#e6ada8}.strip{display:flex;align-items:center;flex-wrap:wrap;gap:8px}.log{background:#102d29;color:#cbe5d6;border-radius:12px;padding:15px;max-height:218px;overflow:auto;font-family:ui-monospace,monospace;font-size:12px;line-height:1.9}.log div{border-bottom:1px solid #ffffff12;padding:5px 0}.agents{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.agent{background:#f7faf8;padding:13px;border:1px solid var(--line);border-radius:12px}.agent b{display:block;font-size:13px}.agent span{font-size:12px;color:var(--muted)}.rights{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.right{border:1px solid #cfe0d5;border-radius:14px;padding:19px;background:linear-gradient(180deg,#f8fcf8,#fff)}.right .num{color:#1b7d62;font-weight:900;font-size:12px}.right h3{font-size:18px;margin:11px 0}.right .meta{font-size:12px;color:var(--muted)}.right .tag{display:inline-block;background:#eff6ed;border-radius:9px;padding:3px 9px;margin-top:12px;font-size:11px;color:#2a6959}.tablewrap{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:13px;min-width:560px}th{text-align:left;font-size:12px;color:#607a73;background:#f1f7f3;padding:12px}td{padding:13px 12px;border-bottom:1px solid #eaf0eb;vertical-align:top}td strong{color:#1a6352}.alloc{display:flex;height:20px;overflow:hidden;border-radius:30px;margin:18px 0}.alloc div{height:100%;position:relative}.legend{display:flex;flex-wrap:wrap;gap:9px}.legend span{display:inline-flex;align-items:center;gap:6px;font-size:11px;color:var(--muted)}.legend i{width:9px;height:9px;border-radius:100px}.notice{border-left:4px solid #c69a4a;background:#fff8e9;border-radius:8px;padding:12px 15px;color:#82622b;font-size:12px}.switch{position:fixed;right:20px;bottom:18px;z-index:20;display:flex;align-items:end;flex-direction:column;gap:9px}.switch button{border:0}.switch .trigger{background:#103f38;color:white;box-shadow:0 8px 28px #082a2940;border-radius:30px;padding:12px 18px;font-weight:800;font-size:12px}.switch .menu{display:none;width:245px;padding:8px;border-radius:15px;box-shadow:var(--shadow);background:white;border:1px solid var(--line)}.switch .menu.show{display:block}.switch .menu button{display:block;text-align:left;width:100%;background:transparent;border-radius:9px;padding:10px 12px;color:#254942}.switch .menu button.selected,.switch .menu button:hover{background:#eaf5ef}.switch .menu span{font-size:10px;display:block;color:var(--muted)}.bars{display:grid;gap:9px}.bar{height:10px;border-radius:30px;background:#e6eee8;overflow:hidden}.bar div{height:100%;background:#1a8770;transition:width .3s}.bar.risk div{background:#bf684a}.key{font-weight:800;color:#115a47}.hidden{display:none!important}footer{color:var(--muted);font-size:11px;padding-top:25px}.checkpoint{border:1px solid var(--line);padding:14px 16px;border-radius:12px;background:#fafcfb;margin-bottom:11px}.checkpoint b{display:block}.checkpoint span{font-size:12px;color:var(--muted)}.checkpoint.ready{background:#ebf7ee;border-color:#91cdb1}.checkpoint.stop{background:#fff1ef;border-color:#e9b7ac}.footnote{font-size:11px;color:var(--muted)}@media(max-width:1100px){.g4{grid-template-columns:repeat(2,1fr)}.rights{grid-template-columns:1fr}.flow{grid-template-columns:repeat(3,1fr)}}@media(max-width:800px){.layout{display:block}.side{display:none}.top{height:64px;padding:0 18px}.content{padding:24px 15px 100px}.g2,.g3{grid-template-columns:1fr}.hero{padding:23px}.flow{grid-template-columns:repeat(2,1fr)}.agents{grid-template-columns:1fr}.switch{right:12px;bottom:12px}}@media(max-width:430px){.g4,.fields{grid-template-columns:1fr}.top .flag{display:none}.stat b{font-size:22px}h1{font-size:29px}.switch .menu{width:220px}}
 
@@ -51,11 +51,23 @@
 .credit-kv>div:last-child{border-bottom:0}
 @media(max-width:990px){.credit-banner{grid-template-columns:1fr 1fr}}
 @media(max-width:490px){.credit-banner{grid-template-columns:1fr 1fr;padding:14px;gap:12px}.credit-banner b,.credit-banner strong{font-size:14px}}
+</style><style id="matching-v9">
+.match-steps{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}
+.match-steps span{display:grid;place-items:center;padding:11px 6px;font-size:11px;text-align:center;border-radius:9px;background:#f0f5f1;border:1px solid #d8e6dc;color:#6d8376}
+.match-steps span.done{background:#e1f5e9;color:#09664e;border-color:#79bf9d;font-weight:750}
+.match-candidates{display:grid;gap:10px}.match-agent{border:1px solid #d5e3d9;background:#fafcfb;border-radius:12px;padding:14px}
+.match-agent .tagline{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:8px}
+.match-agent strong{color:#164f40;font-size:14px}.match-agent .meta{font-size:11px;color:#71857b;line-height:1.7}
+.match-agent.bid-ready{border-color:#70bb91;background:#f0fbf4}.match-agent.bid-invalid{opacity:.72}
+.match-agent button{margin-top:9px;width:100%}.match-convo{height:410px;overflow-y:auto;display:flex;flex-direction:column;gap:9px;padding:12px;background:#e8eee8;border-radius:12px}
+.match-msg{max-width:92%;align-self:flex-start;border:1px solid #e0e8e0;background:#fff;border-radius:11px;padding:10px 12px;white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px}
+.match-msg.capital{align-self:flex-end;background:#dff5e6}.match-msg b{display:block;font-size:11px;color:#0c6e57;margin-bottom:4px}
+@media(max-width:1100px){.match-steps{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:550px){.match-steps{grid-template-columns:repeat(2,minmax(0,1fr))}.match-convo{height:300px}}
 </style></head>
 <body>
-<div class="layout"><aside class="side"><div class="brand"><div class="mark">A</div><div><b>Agent Lending</b><small>PRODUCT STUDIO / V8.0</small></div></div><nav class="nav" aria-label="页面导航"><div class="group-head">01 · 产品设计</div><button class="active" data-go="overview">▦ &nbsp; 产品总览</button><button data-go="token">◉ &nbsp; 代币经济学</button><button data-go="davis">◎ &nbsp; 戴维斯双杀防范</button><div class="group-head">02 · 交互原型展示</div><button data-go="a2a">◉ &nbsp; 借款人 / 完整申请</button><button data-go="lender">▤ &nbsp; 贷款人 / 资金确认</button><button data-go="poolops">◈ &nbsp; 资金池 / 资金流转</button><button data-go="admin">▦ &nbsp; 管理后台</button><button data-go="defi">◇ &nbsp; Web2 × DeFi 沙盘</button><div class="group-head">03 · 问题讨论</div><button data-go="chain">01 &nbsp; 为什么选择 Polygon？</button></nav><div class="sidefoot">研究与产品交互演示<br>所有金额均为模拟数据，非真实信贷或投资服务。</div></aside>
+<div class="layout"><aside class="side"><div class="brand"><div class="mark">A</div><div><b>Agent Lending</b><small>PRODUCT STUDIO / V9.0</small></div></div><nav class="nav" aria-label="页面导航"><div class="group-head">01 · 产品设计</div><button class="active" data-go="overview">▦ &nbsp; 产品总览</button><button data-go="token">◉ &nbsp; 代币经济学</button><button data-go="davis">◎ &nbsp; 戴维斯双杀防范</button><div class="group-head">02 · 交互原型展示</div><button data-go="a2a">◉ &nbsp; 借款人 / 完整申请</button><button data-go="matching">↔ &nbsp; A2A Agent 撮合</button><button data-go="lender">▤ &nbsp; 贷款人 / 资金确认</button><button data-go="poolops">◈ &nbsp; 资金池 / 资金流转</button><button data-go="admin">▦ &nbsp; 管理后台</button><button data-go="defi">◇ &nbsp; Web2 × DeFi 沙盘</button><div class="group-head">03 · 问题讨论</div><button data-go="chain">01 &nbsp; 为什么选择 Polygon？</button></nav><div class="sidefoot">研究与产品交互演示<br>所有金额均为模拟数据，非真实信贷或投资服务。</div></aside>
 <main class="main"><header class="top"><strong id="currentTitle">产品总览</strong><div class="flag">交互演示 · 模拟环境</div></header><div class="content">
-<section class="page active" id="overview"><div class="hero"><div class="eyebrow">AGENT-NATIVE LENDING INFRASTRUCTURE</div><h1>从传统借贷到<br>Agent 原生的金融协作网络</h1><p class="lead">把借款申请、风险判断、合规校验、资金询价、放款与资产映射连接为一个可审计流程。借款端保持 Web2 体验，资金端逐步接入受约束的链上机制。</p><div class="actions"><button class="btn light" data-go="a2a">体验 Agent 协作 →</button><button class="btn line" data-go="defi">查看 Web2 × DeFi 资产池</button></div></div>
+<section class="page active" id="overview"><div class="hero"><div class="eyebrow">AGENT-NATIVE LENDING INFRASTRUCTURE</div><h1>从传统借贷到<br>Agent 原生的金融协作网络</h1><p class="lead">把借款申请、风险判断、合规校验、资金询价、放款与资产映射连接为一个可审计流程。借款端保持 Web2 体验，资金端逐步接入受约束的链上机制。</p><div class="actions"><button class="btn light" data-go="matching">体验 A2A 资金撮合 →</button><button class="btn line" data-go="defi">查看 Web2 × DeFi 资产池</button></div></div>
 <div class="g4"><div class="stat"><small>演示借款</small><b>3,000 <small style="display:inline">MXN</small></b><em>墨西哥 / 30 天 / 示例</em></div><div class="stat"><small>专业 Agent 类型</small><b>10</b><em>分工、权限与审计</em></div><div class="stat"><small>资产池示例 NAV</small><b>1,000 <small style="display:inline">USDC</small></b><em>资产与现金分别核算</em></div><div class="stat"><small>LENDX 最大发行提案</small><b>10 亿</b><em>尚未发行，非投资收益承诺</em></div></div><div class="g2" style="margin-top:20px"><div class="panel"><h2>借款人看到的产品</h2><div class="stack"><div class="checkpoint"><b>01 · 对话申请与身份核验</b><span>WhatsApp / H5 → 提交申请，授权必要的数据和证明</span></div><div class="checkpoint"><b>02 · 审核和可接受报价</b><span>风控＋合规＋资金方确认后生成真实报价；拒绝或人审有明确路径</span></div><div class="checkpoint"><b>03 · 放款、还款、贷后服务</b><span>确认后才请求支付；到账和还款以对账结果为准</span></div></div></div><div class="panel"><h2>机构与资金方看到的产品</h2><div class="stack"><div class="checkpoint"><b>01 · A2A 询价和协同</b><span>标准资金需求 → 合格合作资金方 → 受限报价与验收</span></div><div class="checkpoint"><b>02 · 贷款资产映射</b><span>贷款合同、放款与权属证据核验，交割后才能计入资产池</span></div><div class="checkpoint"><b>03 · 链上资金与池份额</b><span>现金、应收、减值、份额净值、赎回队列与审计留痕</span></div></div></div></div><footer>产品边界：Demo 并未接入真实 KYC、信贷决策、支付通道、钱包或投资合约。各功能仅供方案评审。</footer></section>
 <section class="page" id="a2a">
 <div class="eyebrow">INTERACTIVE PROTOTYPE / 01 · BORROWER</div>
@@ -77,14 +89,54 @@
 <div class="g2"><div class="stat"><small>已还金额</small><b id="creditPaid">0.00 MXN</b></div><div class="stat"><small>结清奖励</small><b id="creditPoints">0 Points</b></div></div>
 <div class="notice" style="margin-top:14px">仅在贷款人确认资金、借款人接受报价、后台放款确认后，才能出现真实的模拟在贷余额。结清奖励只发放一次。</div>
 </div></div>
-<div class="panel" style="margin-top:18px"><div class="strip" style="justify-content:space-between"><h2 style="margin:0">全链路事件时间线</h2><span class="pill blue">共享 Loan Case</span></div><div class="credit-timeline" id="creditTimeline" aria-live="polite"></div><div class="strip" style="margin-top:16px"><button class="btn line" data-go="lender">下一站：贷款人 →</button><button class="btn line" data-go="poolops">查看资金池 →</button><button class="btn line" data-go="admin">查看管理后台 →</button></div></div>
+<div class="panel" style="margin-top:18px"><div class="strip" style="justify-content:space-between"><h2 style="margin:0">全链路事件时间线</h2><span class="pill blue">共享 Loan Case</span></div><div class="credit-timeline" id="creditTimeline" aria-live="polite"></div><div class="strip" style="margin-top:16px"><button class="btn" data-go="matching">下一站：A2A 撮合 →</button><button class="btn line" data-go="lender">贷款人确认 →</button><button class="btn line" data-go="poolops">查看资金池 →</button><button class="btn line" data-go="admin">查看管理后台 →</button></div></div>
 <div class="panel" style="margin-top:18px"><h2>10 类 Agent 角色与权限</h2><div class="agents"><div class="agent"><b>Supervisor</b><span>任务编排与状态机，不得覆盖合规否决</span></div><div class="agent"><b>Onboarding</b><span>申请与授权收集，不得自行审批</span></div><div class="agent"><b>Risk</b><span>结构化风险建议，不得转款</span></div><div class="agent"><b>Compliance</b><span>政策准入与否决，拥有硬约束</span></div><div class="agent"><b>Capital</b><span>发送 RFQ 与资金需求，不创造资金</span></div><div class="agent"><b>Partner Lender</b><span>确认容量与资金预占，不接触原始敏感聊天</span></div><div class="agent"><b>Pricing</b><span>生成规则内报价与还款计划</span></div><div class="agent"><b>Disbursement</b><span>检查接受、幂等键与到账确认</span></div><div class="agent"><b>Servicing</b><span>管理实际到账、逾期与困难协助</span></div><div class="agent"><b>CRM</b><span>负责通知、权益与触达频控</span></div></div></div>
+</section>
+<section class="page" id="matching">
+  <div class="eyebrow">INTERACTIVE PROTOTYPE / A2A MATCHING & RECEPTION</div>
+  <h1>A2A 资金撮合接待室</h1>
+  <p class="lead">这里是 Agent 与 Agent 真正协商资金的过程。Loan Supervisor 转交借款需求，Capital Agent 发布结构化 RFQ，发现合作资金方 Agent Cards，收到多方报价后选择合规且有资金容量的报价，再由资金方确认预占。所有数据均为模拟。</p>
+  <div class="g4">
+    <div class="stat"><small>共享贷款案件</small><b id="matchCase">未申请</b></div>
+    <div class="stat"><small>询价状态</small><b id="matchStage">待申请</b></div>
+    <div class="stat"><small>收到有效报价</small><b id="matchBidCount">0</b></div>
+    <div class="stat"><small>已选资金方</small><b id="matchWinner">—</b></div>
+  </div>
+  <div class="panel" style="margin-top:18px">
+    <h2>Agent to Agent 协商链路</h2>
+    <div class="match-steps" id="matchSteps"><span>01 / 发布 RFQ</span><span>02 / 发现 Agent</span><span>03 / 收集报价</span><span>04 / 选择报价</span><span>05 / 合规确认</span><span>06 / 资金方确认</span></div>
+    <div class="result" id="matchRequest" style="margin-top:14px">请先从借款人页面提交申请并完成风控、合规检查。</div>
+    <div class="strip" style="margin-top:15px">
+      <button class="btn" id="matchPublish">① 发布资金需求</button>
+      <button class="btn line" id="matchDiscover">② 发现 Agent Cards</button>
+      <button class="btn line" id="matchCollect">③ 收集多方报价</button>
+      <button class="btn line" id="matchCompliance">⑤ 核验选中报价</button>
+      <button class="btn warn" id="matchRestart">重新询价</button>
+    </div>
+  </div>
+  <div class="g2" style="margin-top:18px">
+    <div class="panel">
+      <h2>合作贷款人 Agent 发现与报价</h2>
+      <p class="micro">显示 Agent 身份、资金成本、可用限额、报价有效性。每次借款只能选择一个有效资金方；不允许拆单绕过限额。</p>
+      <div id="matchCandidates" class="match-candidates"></div>
+    </div>
+    <div class="panel">
+      <h2>Agent 对话与任务日志</h2>
+      <div id="matchConversation" class="match-convo"></div>
+      <div class="strip" style="margin-top:12px">
+        <button class="btn line" data-go="a2a">借款人 →</button>
+        <button class="btn line" data-go="lender">贷款人确认 →</button>
+        <button class="btn line" data-go="admin">管理后台 →</button>
+      </div>
+    </div>
+  </div>
+  <div class="notice" style="margin-top:18px">协议规则：A2A Agent Card 用于发现、Task/RFQ 用于协商，MCP 连接经过授权的工具；合规否决禁止询价。这里的报价只是资金方条件，借款人最终利率必须由 Pricing 按批准政策形成，贷款人确认不等于放款。</div>
 </section>
 <section class="page" id="lender"><div class="eyebrow">INTERACTIVE PROTOTYPE / 02 · PARTNER LENDER</div><h1>贷款人 · 资金报价与确认</h1><p class="lead">合作资金方只看到必要的借款摘要，审核已完成的请求后，在可用资金范围内确认或拒绝。资金预占并不等于实际放款。</p>
 <div class="g3"><div class="stat"><small>待匹配案件</small><b id="lenderCase">—</b></div><div class="stat"><small>可用资金</small><b id="lenderAvailable">—</b></div><div class="stat"><small>当前资金预占</small><b id="lenderReserved">—</b></div></div>
 <div class="g2" style="margin-top:18px">
 <div class="panel"><h2>资金请求 / RFQ</h2><div class="credit-kv" id="lenderRequest"></div><div class="strip" style="margin-top:16px"><button id="lenderConfirm" class="btn">确认资金并生成报价</button><button id="lenderReject" class="btn danger">拒绝本次资金请求</button></div><p class="micro" style="margin-top:15px">贷款人不能修改风控结果或覆盖合规拒绝。确认资金会占用可用额度，但现金尚未出账。</p></div>
-<div class="panel"><h2>资金方操作日志</h2><div id="lenderLog" class="log"></div><div class="strip" style="margin-top:16px"><button class="btn line" data-go="a2a">返回借款人 →</button><button class="btn line" data-go="poolops">查看资金池 →</button></div></div>
+<div class="panel"><h2>资金方操作日志</h2><div id="lenderLog" class="log"></div><div class="strip" style="margin-top:16px"><button class="btn line" data-go="matching">查看 A2A 报价 →</button><button class="btn line" data-go="a2a">返回借款人 →</button><button class="btn line" data-go="poolops">查看资金池 →</button></div></div>
 </div></section>
 <section class="page" id="poolops"><div class="eyebrow">INTERACTIVE PROTOTYPE / 03 · FUNDING POOL</div><h1>资金池 · 现金、预占与贷款资产</h1><p class="lead">这里演示 Web2 法币贷款的资金账户（MXN），和另一页的 DeFi USDC 资产池沙盘分开核算。模拟放款时从可用现金转为贷款本金应收；还款时再转回现金。</p>
 <div class="g4"><div class="stat"><small>现金余额</small><b id="creditPoolCash">—</b></div><div class="stat"><small>已预占资金</small><b id="creditPoolReserved">—</b></div><div class="stat"><small>在贷本金应收</small><b id="creditPoolLoans">—</b></div><div class="stat"><small>资产池 NAV</small><b id="creditPoolNAV">—</b></div></div>
@@ -104,16 +156,16 @@
 
 <section class="page" id="chain"><div class="eyebrow">问题讨论 / QUESTION 01</div><div class="chain-hero"><div class="chain-kicker">PRODUCT QUESTIONS · 01</div><h1>为什么选择 Polygon，<br>而不是 Base、Tron 或以太坊？</h1><p>产品决策待讨论</p></div><div class="panel" style="max-width:840px"><span class="pill blue">问题 01 · 待讨论</span><h2 style="margin-top:16px">为什么选择 Polygon，而不是 Base、Tron 或 Ethereum？</h2><p class="muted">本页仅记录待讨论的问题，暂不提供答案、推荐、对比结果或最终选链结论。</p></div></section>
 </div></main></div>
-<div class="switch"><div class="menu" id="switchMenu" role="menu"><div class="group-head">01 · 产品设计</div><button data-go="overview">产品总览<span>定位与业务闭环</span></button><button data-go="token">代币经济学<span>权益、代币分配与激励预算</span></button><button data-go="davis">戴维斯双杀防范<span>风险控制与压力测试</span></button><div class="group-head">02 · 交互原型展示</div><button data-go="a2a">借款人 · 申请到结清<span>申请、审核、报价、还款</span></button><button data-go="lender">贷款人 · 资金确认<span>询价、容量检查、资金预占</span></button><button data-go="poolops">资金池 · 资产与现金<span>现金、应收、NAV、申购赎回</span></button><button data-go="admin">管理后台 · 审批与运营<span>人工复核、放款、审计</span></button><button data-go="defi">Web2 × DeFi 沙盘<span>链下债权、回款、链上份额</span></button><div class="group-head">03 · 问题讨论</div><button data-go="chain">01 · 为什么选择 Polygon？<span>仅记录待讨论问题</span></button></div><button class="trigger" id="switchToggle" aria-expanded="false" aria-controls="switchMenu">▦ &nbsp; 页面切换 · 1/9 ▾</button></div>
+<div class="switch"><div class="menu" id="switchMenu" role="menu"><div class="group-head">01 · 产品设计</div><button data-go="overview">产品总览<span>定位与业务闭环</span></button><button data-go="token">代币经济学<span>权益、代币分配与激励预算</span></button><button data-go="davis">戴维斯双杀防范<span>风险控制与压力测试</span></button><div class="group-head">02 · 交互原型展示</div><button data-go="a2a">借款人 · 申请到结清<span>申请、审核、报价、还款</span></button><button data-go="matching">A2A Agent 资金撮合<span>RFQ、Agent Cards、多方报价、筛选与核验</span></button><button data-go="lender">贷款人 · 资金确认<span>询价、容量检查、资金预占</span></button><button data-go="poolops">资金池 · 资产与现金<span>现金、应收、NAV、申购赎回</span></button><button data-go="admin">管理后台 · 审批与运营<span>人工复核、放款、审计</span></button><button data-go="defi">Web2 × DeFi 沙盘<span>链下债权、回款、链上份额</span></button><div class="group-head">03 · 问题讨论</div><button data-go="chain">01 · 为什么选择 Polygon？<span>仅记录待讨论问题</span></button></div><button class="trigger" id="switchToggle" aria-expanded="false" aria-controls="switchMenu">▦ &nbsp; 页面切换 · 1/10 ▾</button></div>
 <script>
 (()=>{'use strict';
-const $=id=>document.getElementById(id);let pageIndex=['overview','token','davis','a2a','lender','poolops','admin','defi','chain'];const titles=['产品总览','代币经济学','戴维斯双杀防范','借款人 · 申请到结清','贷款人 · 资金确认','资金池 · 资金流转','管理后台 · 审批与运营','Web2 × DeFi 沙盘','为什么选择 Polygon？'];function go(page){if(!pageIndex.includes(page))return;document.querySelectorAll('.page').forEach(n=>n.classList.toggle('active',n.id===page));document.querySelectorAll('[data-go]').forEach(n=>n.classList.toggle('active',n.dataset.go===page));$('currentTitle').textContent=titles[pageIndex.indexOf(page)];$('switchToggle').textContent='▦  页面切换 · '+(pageIndex.indexOf(page)+1)+'/'+pageIndex.length+' ▾';$('switchMenu').classList.remove('show');$('switchToggle').setAttribute('aria-expanded','false');history.replaceState(null,'','#'+page);window.scrollTo(0,0)}document.querySelectorAll('[data-go]').forEach(n=>n.addEventListener('click',()=>go(n.dataset.go)));$('switchToggle').addEventListener('click',()=>{const open=$('switchMenu').classList.toggle('show');$('switchToggle').setAttribute('aria-expanded',String(open))});document.addEventListener('keydown',e=>{if(e.key==='Escape'){$('switchMenu').classList.remove('show');$('switchToggle').setAttribute('aria-expanded','false')}});
+const $=id=>document.getElementById(id);let pageIndex=['overview','token','davis','a2a','matching','lender','poolops','admin','defi','chain'];const titles=['产品总览','代币经济学','戴维斯双杀防范','借款人 · 申请到结清','A2A Agent 资金撮合','贷款人 · 资金确认','资金池 · 资金流转','管理后台 · 审批与运营','Web2 × DeFi 沙盘','为什么选择 Polygon？'];function go(page){if(!pageIndex.includes(page))return;document.querySelectorAll('.page').forEach(n=>n.classList.toggle('active',n.id===page));document.querySelectorAll('[data-go]').forEach(n=>n.classList.toggle('active',n.dataset.go===page));$('currentTitle').textContent=titles[pageIndex.indexOf(page)];$('switchToggle').textContent='▦  页面切换 · '+(pageIndex.indexOf(page)+1)+'/'+pageIndex.length+' ▾';$('switchMenu').classList.remove('show');$('switchToggle').setAttribute('aria-expanded','false');history.replaceState(null,'','#'+page);window.scrollTo(0,0)}document.querySelectorAll('[data-go]').forEach(n=>n.addEventListener('click',()=>go(n.dataset.go)));$('switchToggle').addEventListener('click',()=>{const open=$('switchMenu').classList.toggle('show');$('switchToggle').setAttribute('aria-expanded',String(open))});document.addEventListener('keydown',e=>{if(e.key==='Escape'){$('switchMenu').classList.remove('show');$('switchToggle').setAttribute('aria-expanded','false')}});
 const money=(n,d=2)=>Number(n).toLocaleString('en-US',{minimumFractionDigits:d,maximumFractionDigits:d});const log=(id,s)=>{let el=document.createElement('div');el.textContent='['+new Date().toLocaleTimeString('zh-CN',{hour12:false})+'] '+s;$(id).prepend(el)};const pnum=(id)=>Number($(id).value);const valid=(n)=>Number.isFinite(n)&&n>=0;
 
 const creditStart=247000;
 let credit={case:null,caseNumber:2,events:[],pool:{cash:creditStart,reserved:0,principal:0,shares:creditStart,interest:0,invested:0,paidOut:0},points:0,rewardedCases:new Set(),totalDisbursed:0};
 const creditFmt=(n,d=2)=>money(n,d)+' MXN';
-const creditStageLabels={DRAFT:'尚未开始',SUBMITTED:'已申请 / 待审核',HUMAN_REVIEW:'待人工审核',FUNDING_PENDING:'等待贷款人资金确认',FUNDING_DECLINED:'资金方拒绝',OFFER_READY:'报价待借款人接受',ACCEPTED:'报价已接受 / 待放款',ACTIVE:'还款中',OVERDUE:'逾期处理中',HARDSHIP:'困难协助处理中',CLOSED:'贷款已结清',REJECTED:'申请拒绝'};
+const creditStageLabels={DRAFT:'尚未开始',SUBMITTED:'已申请 / 待审核',HUMAN_REVIEW:'待人工审核',FUNDING_PENDING:'待 A2A 资金询价',PARTNER_CONFIRMATION:'候选报价合规通过 / 待贷款人确认',FUNDING_DECLINED:'资金方拒绝',OFFER_READY:'报价待借款人接受',ACCEPTED:'报价已接受 / 待放款',ACTIVE:'还款中',OVERDUE:'逾期处理中',HARDSHIP:'困难协助处理中',CLOSED:'贷款已结清',REJECTED:'申请拒绝'};
 function creditAdd(actor,msg){
  const ev={time:new Date().toLocaleTimeString('zh-CN',{hour12:false}),actor,message:msg,caseId:credit.case?.id||'SYSTEM'};
  credit.events.unshift(ev);
@@ -142,9 +194,9 @@ function creditRender(){
  $('lenderCase').textContent=c?.id||'无申请';$('lenderAvailable').textContent=creditFmt(creditFree());$('lenderReserved').textContent=creditFmt(p.reserved);
  creditKV($('lenderRequest'),[
   ['案件',c?.id||'未提交'],['借款金额',c?creditFmt(c.amount):'—'],['期限',c?c.days+' 天':'—'],['风控',!c?'—':c.risk||'未评估'],['合规',!c?'—':c.compliance||'待校验'],
-  ['当前流转',creditStageLabels[stage]],['放贷机构','合作资金方 A（模拟）'],['可用现金',creditFmt(creditFree())],['资金方专项额度',c?.scenario==='funds'?creditFmt(c.partnerCapacity||0):'正常（受池现金约束）']
+  ['当前流转',creditStageLabels[stage]],['放贷机构','合作资金方 A（模拟）'],['已选合作 Agent',c?.selectedBid?.name||'待 A2A 撮合'],['选中报价资金成本',c?.selectedBid?c.selectedBid.yield+'%（演示）':'—'],['可用现金',creditFmt(creditFree())],['资金方专项额度',c?.scenario==='funds'?creditFmt(c.partnerCapacity||0):'正常（受池现金约束）']
  ]);
- $('lenderConfirm').disabled=stage!=='FUNDING_PENDING';$('lenderReject').disabled=stage!=='FUNDING_PENDING';
+ $('lenderConfirm').disabled=stage!=='PARTNER_CONFIRMATION';$('lenderReject').disabled=stage!=='PARTNER_CONFIRMATION';
  $('creditPoolCash').textContent=creditFmt(p.cash);$('creditPoolReserved').textContent=creditFmt(p.reserved);$('creditPoolLoans').textContent=creditFmt(p.principal);
  $('creditPoolNAV').textContent=creditFmt(creditNAV());$('creditPoolFree').textContent=creditFmt(creditFree());
  $('creditPoolShares').textContent=money(p.shares,2)+' 份';$('creditPoolPrice').textContent=p.shares>0?(creditNAV()/p.shares).toFixed(4)+' MXN':'—';
@@ -154,14 +206,14 @@ function creditRender(){
  $('adminApprove').disabled=stage!=='HUMAN_REVIEW';$('adminDecline').disabled=stage!=='HUMAN_REVIEW';$('adminDisburse').disabled=stage!=='ACCEPTED';
  $('adminLate').disabled=stage!=='ACTIVE';$('adminSupport').disabled=stage!=='HARDSHIP';
  const timeline=$('creditTimeline');timeline.replaceChildren();let items=[...credit.events].filter(x=>x.caseId===c?.id).reverse();if(!items.length)items=[{actor:'系统',message:'尚未提交借款申请，等待开始。',time:'—'}];items.forEach(ev=>{const row=document.createElement('div');row.className='credit-event';const b=document.createElement('b');b.textContent=ev.actor;const t=document.createElement('span');t.textContent=ev.time;const msg=document.createElement('p');msg.textContent=ev.message;row.append(b,t,msg);timeline.append(row)});
- creditLogBox('lenderLog',ev=>['Capital','贷款人','系统'].includes(ev.actor));creditLogBox('creditPoolLog',ev=>['资金池','贷款人','Disbursement','Servicing','系统'].includes(ev.actor));creditLogBox('adminAudit');
+ creditLogBox('lenderLog',ev=>['Capital','贷款人','系统'].includes(ev.actor));creditLogBox('creditPoolLog',ev=>['资金池','贷款人','Disbursement','Servicing','系统'].includes(ev.actor));creditLogBox('adminAudit');matchRender();
 }
 function creditRequire(stage){return !!credit.case&&credit.case.stage===stage}
 function creditCreate(){
  if(!creditCalcDraft()||$('loanAmount').disabled)return;
  const amount=+$('loanAmount').value,days=+$('loanDays').value,apr=+$('loanApr').value,scenario=$('loanScenario').value;
  const id='MX-'+String(credit.caseNumber++).padStart(4,'0');
- credit.case={id,amount,days,apr,scenario,interest:Math.round(amount*apr*days/365*100)/100,stage:'SUBMITTED',risk:'待评估',compliance:'待校验',paid:0,interestPaid:0,principalPaid:0,accepted:false,paymentKey:null,reserveId:null,partnerCapacity:scenario==='funds'?0:null};
+ credit.case={id,amount,days,apr,scenario,interest:Math.round(amount*apr*days/365*100)/100,stage:'SUBMITTED',risk:'待评估',compliance:'待校验',paid:0,interestPaid:0,principalPaid:0,accepted:false,paymentKey:null,reserveId:null,partnerCapacity:scenario==='funds'?0:null,rfqState:'UNSENT',bids:[],selectedBid:null,rejectedPartners:[],rfqConversation:[]};
  creditAdd('Onboarding','已创建贷款申请 '+id+'；完成虚构 KYC 与收入材料收集');
 }
 function creditRun(){
@@ -178,13 +230,23 @@ function creditAdminReview(approve){
  if(approve){c.stage='FUNDING_PENDING';c.risk='人工批准（模拟）';creditAdd('Human Officer','记录人工批准及理由，送往贷款人确认资金')}else{c.stage='REJECTED';c.risk='人工拒绝';creditAdd('Human Officer','完成人工拒绝，终止申请')}
 }
 function creditLenderConfirm(){
- if(!creditRequire('FUNDING_PENDING'))return;
- const c=credit.case;if(c.scenario==='funds'&&(c.partnerCapacity||0)<c.amount){creditAdd('贷款人','专项资金容量不足：请在资金池页面模拟新增资金，完成后重新确认报价');return}
- if(creditFree()<c.amount){creditAdd('贷款人','资金不足，无法完成预占；请在资金池页面模拟申购');return}
- credit.pool.reserved+=c.amount;c.reserveId='HOLD-'+c.id;c.stage='OFFER_READY';
- creditAdd('贷款人','资金有效预占 '+creditFmt(c.amount)+'；报价由 Pricing Agent 生成，等待借款人接受');
+ if(!creditRequire('PARTNER_CONFIRMATION'))return;
+ const c=credit.case,win=c.selectedBid;
+ if(!win||c.rfqState!=='VERIFIED'||c.compliance!=='通过'){creditAdd('贷款人','缺少合规验签后的 A2A 获胜报价，禁止预占');return}
+ if(c.scenario==='funds'&&(c.partnerCapacity||0)<c.amount){creditAdd('贷款人','资金方专项容量不足，需增加资金后重新询价');return}
+ if(creditFree()<c.amount){creditAdd('贷款人','资金池可用现金不足，暂不接受报价');return}
+ credit.pool.reserved+=c.amount;c.reserveId='HOLD-'+c.id;c.stage='OFFER_READY';c.rfqState='HELD';
+ matchSay('Partner Lender '+win.name,'确认资金、预占 '+creditFmt(c.amount)+'，确认编号 '+c.reserveId);
+ creditAdd('贷款人','A2A 合作 Agent '+win.name+' 已确认资金并预占 '+creditFmt(c.amount)+'；Pricing 生成借款人报价');
 }
-function creditLenderReject(){if(!creditRequire('FUNDING_PENDING'))return;credit.case.stage='FUNDING_DECLINED';creditAdd('贷款人','合作资金方拒绝本次请求，未预占资金、未生成报价')}
+function creditLenderReject(){
+ if(!creditRequire('PARTNER_CONFIRMATION'))return;
+ const c=credit.case;
+ if(c.selectedBid)c.rejectedPartners.push(c.selectedBid.id);
+ matchSay('Partner Lender','拒绝当前候选，撤回本次确认；返回已收集报价选择其他资金方');
+ c.selectedBid=null;c.rfqState='BIDS_RECEIVED';c.stage='FUNDING_PENDING';
+ creditAdd('贷款人','候选资金方拒绝，退回 A2A 市场重新选择；无资金预占');
+}
 function creditAccept(){
  if(!creditRequire('OFFER_READY'))return;
  credit.case.accepted=true;credit.case.stage='ACCEPTED';creditAdd('借款人','明确接受报价及还款条款；等待后台独立确认支付');
@@ -212,7 +274,7 @@ function creditInvest(subscribe){
  const amount=+$('creditCapitalAmount').value,p=credit.pool;
  if(!Number.isFinite(amount)||amount<=0||amount>100000){creditAdd('资金池','申购 / 赎回金额无效');return}
  const nav=creditNAV(),price=nav>0&&p.shares>0?nav/p.shares:1;
- if(subscribe){p.cash+=amount;p.shares+=amount/price;p.invested+=amount;if(credit.case?.scenario==='funds'&&credit.case.stage==='FUNDING_PENDING')credit.case.partnerCapacity+=amount;creditAdd('资金池','模拟申购到账 '+creditFmt(amount)+'，新增 '+money(amount/price,3)+' 份；按当前份额净值计算')}
+ if(subscribe){p.cash+=amount;p.shares+=amount/price;p.invested+=amount;if(credit.case?.scenario==='funds'&&credit.case.stage==='FUNDING_PENDING'){credit.case.partnerCapacity+=amount;if(credit.case.rfqState==='BIDS_RECEIVED'){credit.case.rfqState='DISCOVERED';credit.case.bids=[];matchSay('Capital Agent','资金池新增资金到账，旧报价已失效，请重新收集报价')}};creditAdd('资金池','模拟申购到账 '+creditFmt(amount)+'，新增 '+money(amount/price,3)+' 份；按当前份额净值计算')}
  else {if(creditFree()<amount||p.shares<amount/price){creditAdd('资金池','模拟赎回进入等待：可用现金或份额不足，禁止透支');return}p.cash-=amount;p.shares-=amount/price;p.paidOut+=amount;creditAdd('资金池','模拟赎回 '+creditFmt(amount)+'，按现价销毁 '+money(amount/price,3)+' 份；不挪用已预占资金')}
 }
 function creditResetAll(){
@@ -235,6 +297,123 @@ $('adminExport').addEventListener('click',()=>{
  const payload={version:'Agent Lending V8 demo',case:credit.case,pool:credit.pool,points:credit.points,totalDisbursed:credit.totalDisbursed,events:credit.events};
  const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='agent-lending-demo-audit.json';a.click();URL.revokeObjectURL(url);
 });
+
+const matchAgents=[
+ {id:'LENDER_A',name:'Partner A Agent',yield:18.0,max:12000,license:'PARTNER-A-DEMO',accept:[14,30,60]},
+ {id:'LENDER_B',name:'Partner B Agent',yield:16.5,max:6500,license:'PARTNER-B-DEMO',accept:[30,60]},
+ {id:'LENDER_C',name:'Partner C Agent',yield:14.5,max:2500,license:'PARTNER-C-DEMO',accept:[14,30]}
+];
+const matchLabels={UNSENT:'等待借款需求',PUBLISHED:'RFQ 已发布',DISCOVERED:'发现 3 个 Agent',BIDS_RECEIVED:'报价已收到',CANDIDATE:'已选择候选报价',VERIFIED:'已通过合规核验',HELD:'资金预占成功'};
+function matchSay(actor,text){
+ const c=credit.case;if(!c)return;
+ if(!Array.isArray(c.rfqConversation))c.rfqConversation=[];
+ c.rfqConversation.push({actor,text});
+ if(c.rfqConversation.length>80)c.rfqConversation.shift();
+}
+function matchEligible(c,b){
+ return c&&b&&b.capacity>=c.amount&&b.accept.includes(c.days)&&b.yield<=c.apr&&c.compliance==='通过'&&!c.rejectedPartners.includes(b.id);
+}
+function matchRender(){
+ const c=credit.case,rf=c?.rfqState||'UNSENT',stage=creditStage();
+ $('matchCase').textContent=c?.id||'无贷款申请';
+ $('matchStage').textContent=c?(matchLabels[rf]||rf):'待申请';
+ $('matchBidCount').textContent=c?.bids?.filter(b=>matchEligible(c,b)).length||0;
+ $('matchWinner').textContent=c?.selectedBid?.name||'—';
+ $('matchPublish').disabled=stage!=='FUNDING_PENDING'||rf!=='UNSENT';
+ $('matchDiscover').disabled=stage!=='FUNDING_PENDING'||rf!=='PUBLISHED';
+ $('matchCollect').disabled=stage!=='FUNDING_PENDING'||rf!=='DISCOVERED';
+ $('matchCompliance').disabled=stage!=='FUNDING_PENDING'||rf!=='CANDIDATE';
+ $('matchRestart').disabled=stage!=='FUNDING_PENDING';
+ const req=$('matchRequest');
+ req.textContent=!c?'尚无 Loan Case。请先创建贷款申请并完成风控合规检查。':
+ stage==='REJECTED'?'合规或人工审核拒绝，不能发布资金询价。':
+ stage==='HUMAN_REVIEW'?'等待人工审核批准，暂不进入资金市场。':
+ 'FundingRequest {case_id: '+c.id+', amount: '+c.amount+' MXN, tenor_days: '+c.days+', risk_band: '+c.risk+', max_borrower_apr: '+c.apr+'%, compliance: '+c.compliance+'}';
+ const steps=['PUBLISHED','DISCOVERED','BIDS_RECEIVED','CANDIDATE','VERIFIED','HELD'];
+ const order={UNSENT:0,PUBLISHED:1,DISCOVERED:2,BIDS_RECEIVED:3,CANDIDATE:4,VERIFIED:5,HELD:6};
+ [...$('matchSteps').children].forEach((el,i)=>el.classList.toggle('done',(order[rf]||0)>i));
+ const cards=$('matchCandidates');cards.replaceChildren();
+ if(c&&(order[rf]||0)>=2){
+  matchAgents.forEach(agent=>{
+   const bid=c.bids?.find(b=>b.id===agent.id);
+   const el=document.createElement('div');el.className='match-agent '+(bid?(matchEligible(c,bid)?'bid-ready':'bid-invalid'):'');
+   const top=document.createElement('div');top.className='tagline';
+   const name=document.createElement('strong');name.textContent=agent.name;
+   const pill=document.createElement('span');pill.className='pill '+(bid&&!matchEligible(c,bid)?'red':bid?'':'yellow');
+   pill.textContent=!bid?'已发现 Agent Card':matchEligible(c,bid)?'有效报价':c.rejectedPartners.includes(bid.id)?'资金方已拒绝':'不符合约束';
+   top.append(name,pill);el.append(top);
+   const detail=document.createElement('div');detail.className='meta';
+   detail.textContent='Agent DID: '+agent.id+' | 牌照凭据: '+agent.license+'（演示）\n资金成本: '+agent.yield+'% | 支持期限: '+agent.accept.join('/')+' 天 | 报价可用容量: '+(bid?bid.capacity:agent.max)+' MXN';
+   detail.style.whiteSpace='pre-line';el.append(detail);
+   if(bid){
+    const choose=document.createElement('button');choose.className='btn '+(c.selectedBid?.id===bid.id?'':'line');
+    choose.textContent=c.selectedBid?.id===bid.id?'当前选择 ✓':matchEligible(c,bid)?'选择此资金方报价':'不满足金额 / 期限 / 政策';
+    choose.disabled=stage!=='FUNDING_PENDING'||!['BIDS_RECEIVED','CANDIDATE'].includes(rf)||!matchEligible(c,bid);
+    choose.dataset.matchChoose=bid.id;el.append(choose);
+   }
+   cards.append(el);
+  });
+ }else{const note=document.createElement('p');note.className='micro';note.textContent='等待发现资金方 Agent。请先发布 RFQ。';cards.append(note)}
+ const feed=$('matchConversation');feed.replaceChildren();
+ (c?.rfqConversation||[]).forEach(m=>{const el=document.createElement('div');el.className='match-msg '+(m.actor.includes('Capital')?'capital':'');const head=document.createElement('b');head.textContent=m.actor;el.append(head,document.createTextNode(m.text));feed.append(el)});
+ if(!c?.rfqConversation?.length){const el=document.createElement('div');el.className='match-msg';el.textContent='等待 Loan Supervisor 创建案件和发布融资需求。';feed.append(el)}
+ feed.scrollTop=feed.scrollHeight;
+}
+function matchPublish(){
+ if(!creditRequire('FUNDING_PENDING')||credit.case.rfqState!=='UNSENT')return;
+ const c=credit.case;
+ if(c.compliance!=='通过'){creditAdd('Capital','合规未通过，不允许发布询价');return}
+ c.rfqState='PUBLISHED';matchSay('Loan Supervisor','Loan Case '+c.id+' 已通过风控、合规检查，交给 Capital Agent');
+ matchSay('Capital Agent','A2A FundingRequest 已发布：'+creditFmt(c.amount)+'，'+c.days+' 天，借款人 APR 上限 '+c.apr+'%');
+ creditAdd('Capital','发布 A2A RFQ，等待资金方发现任务');
+}
+function matchDiscover(){
+ if(!creditRequire('FUNDING_PENDING')||credit.case.rfqState!=='PUBLISHED')return;
+ const c=credit.case;c.rfqState='DISCOVERED';
+ matchSay('Discovery / Agent Cards','找到三个已登记的资金方 Agent，依据预设 Agent Card 筛选可接收询价的对手方');
+ creditAdd('A2A Discovery','完成 Agent Card 发现与认证（模拟），不暴露原始 KYC 和聊天记录');
+}
+function matchCollect(){
+ if(!creditRequire('FUNDING_PENDING')||credit.case.rfqState!=='DISCOVERED')return;
+ const c=credit.case;
+ c.bids=matchAgents.map(a=>({
+  ...a,capacity:c.scenario==='funds'?Math.min(a.max,c.partnerCapacity||0):a.max,
+  bidId:'BID-'+c.id+'-'+a.id,validUntil:'本轮模拟询价'
+ }));
+ c.rfqState='BIDS_RECEIVED';
+ c.bids.forEach(b=>matchSay(b.name,'FundingBid：资金成本 '+b.yield+'%，可用额度 '+b.capacity+' MXN，支持 '+b.accept.join('/')+' 天，凭据 '+b.license));
+ creditAdd('Capital','收到 '+c.bids.length+' 份 FundingBid，其中 '+c.bids.filter(b=>matchEligible(c,b)).length+' 份满足当前条件');
+}
+function matchChoose(id){
+ if(!creditRequire('FUNDING_PENDING'))return;
+ const c=credit.case;if(!['BIDS_RECEIVED','CANDIDATE'].includes(c.rfqState))return;
+ const b=c.bids.find(b=>b.id===id);if(!matchEligible(c,b))return;
+ c.selectedBid=b;c.rfqState='CANDIDATE';
+ matchSay('Capital Agent','依据资金成本及可用容量选择 '+b.name+' 作为候选，保留其余报价供比较；等待 Compliance 审核');
+ creditAdd('Capital','候选报价已选：'+b.name+'，成本 '+b.yield+'%（模拟），待合规核验');
+}
+function matchVerify(){
+ if(!creditRequire('FUNDING_PENDING')||credit.case.rfqState!=='CANDIDATE')return;
+ const c=credit.case,b=c.selectedBid;
+ if(!matchEligible(c,b)){matchSay('Compliance Agent','候选报价已失效或不合规，请重新选择');creditAdd('Compliance','候选资金方校验失败');return}
+ if(creditFree()<c.amount){matchSay('Capital Agent','资金池可用现金不足，请先在资金池页面增加资金');creditAdd('Capital','资金池现金不足，未生成可接受报价');return}
+ c.rfqState='VERIFIED';c.stage='PARTNER_CONFIRMATION';
+ matchSay('Compliance Agent','已验证合作方凭据、报价期限、风险带、资金限额及政策版本；不得绕过合规否决');
+ matchSay('Capital Agent','获选 '+b.name+'，请求该资金方正式确认并预占资金');
+ creditAdd('Compliance','已完成获胜资金方合规印章与 RFQ 有效性校验，转贷款人确认');
+}
+function matchRestart(){
+ if(!creditRequire('FUNDING_PENDING'))return;
+ const c=credit.case;c.rfqState='UNSENT';c.bids=[];c.selectedBid=null;c.rfqConversation=[];
+ creditAdd('Capital','重新启动本案件询价，未造成放款或资金预占');
+}
+$('matchPublish').addEventListener('click',matchPublish);
+$('matchDiscover').addEventListener('click',matchDiscover);
+$('matchCollect').addEventListener('click',matchCollect);
+$('matchCompliance').addEventListener('click',matchVerify);
+$('matchRestart').addEventListener('click',matchRestart);
+$('matchCandidates').addEventListener('click',e=>{const button=e.target.closest('[data-match-choose]');if(button)matchChoose(button.dataset.matchChoose)});
+
 creditResetAll();
 let pool;function poolCalc(){return pool.cash+pool.loans}function sharePrice(){return pool.shares>0?poolCalc()/pool.shares:0}function updatePool(){$('poolCash').textContent=money(pool.cash);$('poolLoans').textContent=money(pool.loans);$('poolNav').textContent=money(poolCalc());$('poolPrice').textContent=sharePrice().toFixed(4);$('settleLoan').disabled=!pool.mapped||pool.purchased}function poolSay(s,cls=''){$('poolMsg').className='result '+cls;$('poolMsg').textContent=s;log('poolLog',s);updatePool()}function resetPool(){pool={cash:400,loans:600,shares:1000,mapped:false,purchased:false,repayOne:false,secondRepay:false,markedLate:false,impaired:false,redemption:null};$('docsOk').checked=false;$('titleOk').checked=false;$('dupOk').checked=false;$('mappingMsg').textContent='待核验：缺少凭证时不可入池。';$('redeemMsg').textContent='暂无赎回申请。';$('poolLog').innerHTML='<div>资产池模拟已初始化：400 USDC 现金＋600 USDC 贷款资产，1000 份。</div>';updatePool()}$('mapLoan').addEventListener('click',()=>{if(pool.mapped){$('mappingMsg').textContent='重复请求：候选 ASSET-MX-005 已存在，拒绝重复登记';return}if(!['docsOk','titleOk','dupOk'].every(id=>$(id).checked)){$('mappingMsg').textContent='登记失败：缺少合同/放款、权属或防重复融资证据';return}pool.mapped=true;$('mappingMsg').textContent='成功：Loan-MX-005 ⇄ ASSET-MX-005 已登记为候选；待购买交割，不计入池资产';log('poolLog','映射候选登记成功，未入池');updatePool()});$('settleLoan').addEventListener('click',()=>{if(!pool.mapped||pool.purchased)return;if(pool.cash<100){poolSay('交割失败：资金不足','bad');return}pool.cash-=100;pool.loans+=100;pool.purchased=true;poolSay('资产购买交割成功：现金减少 100，贷款应收增加 100，NAV 不变')});$('repaymentOne').addEventListener('click',()=>{if(pool.repayOne){poolSay('重复回款回执：已处理，未再次入账');return}if(pool.loans<50){poolSay('应收本金不足，禁止重复入账','bad');return}pool.repayOne=true;pool.loans-=50;pool.cash+=51;poolSay('收到并核对第一笔：本金 50 转为现金，利息净额 +1；NAV 增加 1')});$('markLate').addEventListener('click',()=>{pool.markedLate=true;poolSay('逾期状态已标记：不直接改变 NAV；等待减值评估','warn')});$('writeDown').addEventListener('click',()=>{if(pool.impaired){poolSay('减值已记录，不可重复执行');return}if(!pool.markedLate){poolSay('需先标记逾期并经授权人员审核减值','bad');return}pool.impaired=true;pool.loans=Math.max(0,pool.loans-10);poolSay('人工批准模拟减值 10 USDC：池贷款净值与 NAV 同步减少','warn')});$('subscribe').addEventListener('click',()=>{let a=pnum('subAmount');if($('investorStatus').value!=='yes'){poolSay('申购拒绝：投资人资格未核验','bad');return}if(!valid(a)||a<=0){poolSay('请输入有效申购金额','bad');return}let price=sharePrice();if(price<=0){poolSay('份额净值无效，暂停申购','bad');return}pool.cash+=a;pool.shares+=a/price;poolSay('模拟申购到账 '+money(a)+' USDC，铸造份额 '+money(a/price,4)+'，NAV/份额按当前价格执行')});$('requestRedeem').addEventListener('click',()=>{if($('investorStatus').value!=='yes'){$('redeemMsg').textContent='赎回拒绝：投资人资格未核验';return}if(pool.redemption){$('redeemMsg').textContent='已有赎回队列请求；请先处理';return}let sh=pnum('redeemShares');if(!valid(sh)||sh<=0||sh>pool.shares){$('redeemMsg').textContent='份额超出有效范围';return}let amt=sh*sharePrice();pool.redemption={shares:sh,amount:amt};$('redeemMsg').textContent='已提交赎回 '+money(sh)+' 份，按当前快照估算 '+money(amt)+' USDC；可用现金 '+money(Math.max(0,pool.cash-100))+' USDC。等待结算检查。';log('poolLog','收到赎回请求：'+money(sh)+' 份')});$('secondRepay').addEventListener('click',()=>{if(pool.secondRepay){poolSay('回款回执已确认，禁止重复入账');return}if(pool.loans<200){poolSay('可核销应收不足，无法确认 200 USDC 本金','bad');return}pool.secondRepay=true;pool.loans-=200;pool.cash+=200;poolSay('第二笔本金回款 200 USDC 已到账；现金增加、应收减少、NAV 不变')});$('executeRedeem').addEventListener('click',()=>{let r=pool.redemption;if(!r){$('redeemMsg').textContent='暂无赎回队列';return}if(pool.cash-100<r.amount){$('redeemMsg').textContent='现金不足：需支付 '+money(r.amount)+' USDC，可用 '+money(Math.max(0,pool.cash-100))+' USDC；继续排队';return}pool.cash-=r.amount;pool.shares-=r.shares;pool.redemption=null;$('redeemMsg').textContent='赎回已确认结算一次；对应现金与份额同时减少';log('poolLog','赎回结算成功：'+money(r.amount)+' USDC');updatePool()});$('resetPool').addEventListener('click',resetPool);resetPool();
 function tokenCalc(){let rev=pnum('netRevenue'),p=pnum('tokenPrice'),cap=pnum('tokenBudget'),cash=pnum('cashBudget');if([rev,p,cap,cash].some(n=>!valid(n))||p<=0||rev<=0||cap<=0||cash<=0){$('tokenResult').className='result warn';$('tokenResult').innerHTML='<strong>暂停新激励授予</strong><br><small>参考价格、收入或已批准预算无效/不足。</small>';return}const incomeLimit=rev*.03/p;const cashLimit=cash/p;const emissions=Math.min(cap,incomeLimit,cashLimit);$('tokenResult').className='result';$('tokenResult').innerHTML='<div>理论上限 <strong>'+money(emissions,0)+' LENDX</strong></div><div class="micro">参考价值 '+money(emissions*p)+' USDC；收入约束 '+money(incomeLimit,0)+' 枚，数量上限 '+money(cap,0)+' 枚，现金约束 '+money(cashLimit,0)+' 枚。</div>'}['netRevenue','tokenPrice','tokenBudget','cashBudget'].forEach(id=>$(id).addEventListener('input',tokenCalc));tokenCalc();
