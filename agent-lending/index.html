@@ -142,7 +142,7 @@ function creditRender(){
  $('lenderCase').textContent=c?.id||'无申请';$('lenderAvailable').textContent=creditFmt(creditFree());$('lenderReserved').textContent=creditFmt(p.reserved);
  creditKV($('lenderRequest'),[
   ['案件',c?.id||'未提交'],['借款金额',c?creditFmt(c.amount):'—'],['期限',c?c.days+' 天':'—'],['风控',!c?'—':c.risk||'未评估'],['合规',!c?'—':c.compliance||'待校验'],
-  ['当前流转',creditStageLabels[stage]],['放贷机构','合作资金方 A（模拟）'],['可用现金',creditFmt(creditFree())]
+  ['当前流转',creditStageLabels[stage]],['放贷机构','合作资金方 A（模拟）'],['可用现金',creditFmt(creditFree())],['资金方专项额度',c?.scenario==='funds'?creditFmt(c.partnerCapacity||0):'正常（受池现金约束）']
  ]);
  $('lenderConfirm').disabled=stage!=='FUNDING_PENDING';$('lenderReject').disabled=stage!=='FUNDING_PENDING';
  $('creditPoolCash').textContent=creditFmt(p.cash);$('creditPoolReserved').textContent=creditFmt(p.reserved);$('creditPoolLoans').textContent=creditFmt(p.principal);
@@ -161,7 +161,7 @@ function creditCreate(){
  if(!creditCalcDraft()||$('loanAmount').disabled)return;
  const amount=+$('loanAmount').value,days=+$('loanDays').value,apr=+$('loanApr').value,scenario=$('loanScenario').value;
  const id='MX-'+String(credit.caseNumber++).padStart(4,'0');
- credit.case={id,amount,days,apr,scenario,interest:Math.round(amount*apr*days/365*100)/100,stage:'SUBMITTED',risk:'待评估',compliance:'待校验',paid:0,interestPaid:0,principalPaid:0,accepted:false,paymentKey:null,reserveId:null};
+ credit.case={id,amount,days,apr,scenario,interest:Math.round(amount*apr*days/365*100)/100,stage:'SUBMITTED',risk:'待评估',compliance:'待校验',paid:0,interestPaid:0,principalPaid:0,accepted:false,paymentKey:null,reserveId:null,partnerCapacity:scenario==='funds'?0:null};
  creditAdd('Onboarding','已创建贷款申请 '+id+'；完成虚构 KYC 与收入材料收集');
 }
 function creditRun(){
@@ -179,7 +179,7 @@ function creditAdminReview(approve){
 }
 function creditLenderConfirm(){
  if(!creditRequire('FUNDING_PENDING'))return;
- const c=credit.case;if(c.scenario==='funds'){creditAdd('贷款人','此情景资金方暂时不可提供资金，拒绝报价；可在重置后选择其他情景');return}
+ const c=credit.case;if(c.scenario==='funds'&&(c.partnerCapacity||0)<c.amount){creditAdd('贷款人','专项资金容量不足：请在资金池页面模拟新增资金，完成后重新确认报价');return}
  if(creditFree()<c.amount){creditAdd('贷款人','资金不足，无法完成预占；请在资金池页面模拟申购');return}
  credit.pool.reserved+=c.amount;c.reserveId='HOLD-'+c.id;c.stage='OFFER_READY';
  creditAdd('贷款人','资金有效预占 '+creditFmt(c.amount)+'；报价由 Pricing Agent 生成，等待借款人接受');
@@ -212,7 +212,7 @@ function creditInvest(subscribe){
  const amount=+$('creditCapitalAmount').value,p=credit.pool;
  if(!Number.isFinite(amount)||amount<=0||amount>100000){creditAdd('资金池','申购 / 赎回金额无效');return}
  const nav=creditNAV(),price=nav>0&&p.shares>0?nav/p.shares:1;
- if(subscribe){p.cash+=amount;p.shares+=amount/price;p.invested+=amount;creditAdd('资金池','模拟申购到账 '+creditFmt(amount)+'，新增 '+money(amount/price,3)+' 份；按当前份额净值计算')}
+ if(subscribe){p.cash+=amount;p.shares+=amount/price;p.invested+=amount;if(credit.case?.scenario==='funds'&&credit.case.stage==='FUNDING_PENDING')credit.case.partnerCapacity+=amount;creditAdd('资金池','模拟申购到账 '+creditFmt(amount)+'，新增 '+money(amount/price,3)+' 份；按当前份额净值计算')}
  else {if(creditFree()<amount||p.shares<amount/price){creditAdd('资金池','模拟赎回进入等待：可用现金或份额不足，禁止透支');return}p.cash-=amount;p.shares-=amount/price;p.paidOut+=amount;creditAdd('资金池','模拟赎回 '+creditFmt(amount)+'，按现价销毁 '+money(amount/price,3)+' 份；不挪用已预占资金')}
 }
 function creditResetAll(){
