@@ -598,9 +598,7 @@ const av={step:'home',amount:300,days:14,consent:false,signed:false,funded:false
 const avSteps=[['home','授信首页'],['chat','AI 对话'],['consent','AI 授权'],['basic','个人信息'],['job','工作收入'],['amount','借款方案'],['ocr','OCR 核验'],['analysis','AI 风控解释'],['offer','贷款报价'],['signature','电子签名'],['receipt','到账回执'],['repay','还款与结清']];
 const avInterest=()=>Math.round(av.amount*.36*av.days/365*100)/100;
 const avDue=()=>Math.round((av.amount+avInterest()+2)*100)/100;
-const avM=n=>'
-})();
-</script></body></html>+Number(n).toFixed(2);
+const avM=n=>String.fromCharCode(36)+Number(n).toFixed(2);
 const avBtn=(label,act,secondary)=>'<button type="button" class="av-btn '+(secondary?'secondary':'')+'" data-av-action="'+act+'">'+label+'</button>';
 const avTitle=t=>'<div class="av-head"><span>Ⓐ Agent Lending</span><b>● Online</b></div><h2>'+t+'</h2>';
 const avRow=(a,b)=>'<div class="av-row"><span>'+a+'</span><b>'+b+'</b></div>';
