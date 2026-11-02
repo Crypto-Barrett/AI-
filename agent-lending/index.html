@@ -251,7 +251,7 @@
  <thead><tr><th>比较维度</th><th>Bitcoin (BTC)</th><th>STEPN (GST / GMT)</th><th>Axie (SLP / AXS)</th><th>Ethena (USDe / sUSDe / ENA)</th></tr></thead>
  <tbody>
  <tr><td>核心经济引擎</td><td>PoW 安全服务和链上转账需求</td><td>运动玩法、装备升级与生态消费</td><td>游戏、繁育、市场交易与玩家参与</td><td>USDe 业务和对冲/储备资产相关净收入</td></tr>
- <tr><td>供给与分配</td><td>约 2,100 万上限；每 210,000 区块减半</td><td>GST 无总量上限；GMT 总发行 60 亿枚</td><td>SLP 作为可获得的游戏资源；AXS 最大供应 2.7 亿枚</td><td>ENA 属治理代币；USDe 是另一个负债/储备框架下的合成美元资产</td></tr>
+ <tr><td>供给与分配</td><td>约 2,100 万上限；每 210,000 区块减半</td><td>GST 无总量上限；GMT 总发行 60 亿枚</td><td>SLP 曾因激励超发而失衡；2024 年项目宣布 440 亿枚供应上限；AXS 最大供应 2.7 亿枚</td><td>ENA 属治理代币；USDe 是另一个负债/储备框架下的合成美元资产</td></tr>
  <tr><td>参与者获得什么</td><td>矿工获得 BTC 补贴和手续费；持币不自动产生收益</td><td>按运动/玩法赚取代币，用于装备和生态消耗</td><td>游戏参与获得奖励；AXS 可按规则质押与治理</td><td>sUSDe 按协议规则获得可变收入相关收益；ENA 的潜在价值承接需看治理与条件达成</td></tr>
  <tr><td>消耗 / 需求来源</td><td>BTC 转账、持有与手续费需求</td><td>GST/GMT 用于铸鞋、维修、升级、市场等</td><td>SLP/AXS 用于繁育及游戏经济，AXS 关联治理/质押</td><td>USDe 使用与持有；ENA 业务收入回购机制按批准的门槛触发，并非自动固定分红</td></tr>
  <tr><td>典型脆弱点</td><td>安全预算向手续费过渡、市场需求变化</td><td>Earn 新增抛压高于实际消费、用户增长放缓</td><td>游戏奖励多于使用消耗、依赖新玩家和繁育需求</td><td>收益取决于业务/市场条件；买回与解锁压力、门槛触发与流动性风险</td></tr>
@@ -260,6 +260,15 @@
  <p class="footnote">“双币”仅描述结构：STEPN 的 GST/GMT 与 Axie 的 SLP/AXS 细节不同。Ethena 更应区分三个角色：USDe（合成美元资产）、sUSDe（满足条件时的可变收益头寸）、ENA（治理与附条件价值机制）。</p>
  </div>
  <div class="panel" style="margin-top:20px">
+<h2>为什么它们曾快速增长？——增长引擎与风险区别</h2>
+<div class="tablewrap"><table><thead><tr><th>项目</th><th>早期增长引擎</th><th>典型转化行为</th><th>最关键的风险</th></tr></thead><tbody>
+<tr><td><strong>Bitcoin</strong></td><td>公开供应规则、网络共识及全球流动性；2024 年美国现货 BTC ETP 获批带来额外传统渠道</td><td>持有、转账、网络服务费用</td><td>稀缺性不保证资产需求或价格上涨</td></tr>
+<tr><td><strong>STEPN</strong></td><td>把日常走路变成可获取代币的行为，NFT 运动鞋、升级和社区传播形成循环；2022 年高峰期有大量活跃用户</td><td>购买鞋子 → 运动赚 GST/GMT → 维修升级/增购</td><td>奖励新增和出售压力大于真实消费</td></tr>
+<tr><td><strong>Axie Infinity</strong></td><td>Play-to-Earn 与 NFT 公会“奖学金”，让无资金玩家也能参与；2021 年末日活曾达约 250 万</td><td>借用/购买 Axie → 游戏获得 SLP → 消费/变现</td><td>游戏活动赚币不等于持续游戏消费；公会经济与玩家收益会随币价下滑</td></tr>
+<tr><td><strong>Ethena</strong></td><td>USDe 合成美元与 sUSDe 可变收益，在 CeFi/DeFi 中成为支付、储蓄与抵押工具；2025 年 8 月 USDe 曾超过 120 亿美元供应</td><td>持有 USDe / 参与 sUSDe / DeFi 组合</td><td>USDe 产品规模与 ENA 的持币收益不是同一指标；对冲、收益、资金流动和赎回均有风险</td></tr>
+</tbody></table></div>
+<p class="footnote">增长数据是历史场景，不是今天的用户或代币价格。2026 年 9 月末 USDe 供应约 49.4 亿美元，较 2025 年高点明显收缩；ENA 的价值承接机制需单独核实。</p>
+</div><div class="panel" style="margin-top:20px">
   <div class="strip" style="justify-content:space-between"><h2 style="margin:0">对 Agent Lending / LENDX 的设计启发</h2><span class="pill yellow">设计建议 · 非已实施功能</span></div>
   <div class="tm-decision-grid" style="margin-top:15px">
    <div class="tm-decision"><span class="pill">借鉴 BTC</span><h3>可核验的供应与解锁纪律</h3><p>公开最大发行量、月度解锁、奖励预算及修改权限。供应稀缺不等于价格必然上涨，不应把币价当作贷款资金来源。</p></div>
@@ -278,6 +287,8 @@
  <a target="_blank" rel="noopener noreferrer" href="https://axieinfinity.com/axs">Axie 官方 · AXS 权益</a>
  <a target="_blank" rel="noopener noreferrer" href="https://whitepaper.axieinfinity.com/gameplay/breeding">Axie Whitepaper · SLP 与繁育消耗</a>
  <a target="_blank" rel="noopener noreferrer" href="https://blog.axieinfinity.com/p/axs-staking-revamp">Axie · 2025 质押奖励调整</a>
+ <a target="_blank" rel="noopener noreferrer" href="https://blog.axieinfinity.com/p/slpcap">Axie · 2024 SLP 440 亿枚上限与稳定政策</a>
+ <a target="_blank" rel="noopener noreferrer" href="https://gov.ethenafoundation.com/t/ethena-s-july-september-2026-governance-update/857">Ethena · 2026 第三季度 ENA 回购决议及供应门槛</a>
  <a target="_blank" rel="noopener noreferrer" href="https://docs.ethena.fi/">Ethena Docs · USDe / sUSDe</a>
  <a target="_blank" rel="noopener noreferrer" href="https://gov.ethenafoundation.com/t/ethena-s-july-september-2026-governance-update/857">Ethena Governance · 2026 年第三季度 ENA fee switch 进展</a>
  </div></div>
@@ -571,8 +582,8 @@ function stress(){let rev=pnum('revDrop'),pr=pnum('priceDrop'),loss=pnum('credit
 const tmCases={
 btc:{name:'Bitcoin · 可预测发行与安全预算',thesis:'不是“做任务赚币”的产品补贴模型，而是由全网共识限制供应、通过矿工奖励支付网络安全成本。',issuance:'供应总量接近 2,100 万 BTC；区块补贴约每 210,000 个区块减半。目前一个区块的补贴是 3.125 BTC，矿工还获得区块交易手续费。',demand:'BTC 可用于转账、持有及支付链上交易费用；持币本身不自动产生协议利息，不因持有而拥有某家公司的利润分配权。',risk:'补贴随减半下降，长期安全预算更依赖手续费；固定供给本身不能保障需求或币价。',lesson:'LENDX 可以学习公开发行上限、可验证的解锁与规则稳定性，但不能照搬挖矿减半就假设会有相同需求。'},
 stepn:{name:'STEPN · GST / GMT 双层激励与消耗',thesis:'以运动和装备为场景，把用户赚取代币与游戏内消耗连接起来，但“有人赚”不等于“有人愿意持续购买”。',issuance:'GST 是无总量上限的游戏代币，运动可赚取；GMT 是供应上限 60 亿的治理与生态使用代币。官方文件载明 GMT 挖矿减半从 2026-01-01 开始。',demand:'GST 用于鞋子铸造、维修、升级、开箱等活动并在相关操作中销毁；GMT 用于部分高级功能和生态消费。',risk:'当奖励流入与潜在出售压力持续大于服务消费需求，消耗机制也不一定能支撑价格。消耗来源应是用户真正愿意为功能付费。',lesson:'将积分、按次 Agent 服务额度与平台币分开，任务执行和报告产生真实可计费需求；不要无限发币换取短期活动量。'},
-axie:{name:'Axie Infinity · SLP / AXS 游戏经济双币',thesis:'SLP 与玩家活动和繁育消耗相关，AXS 则用于治理、质押与生态场景；游戏人口与经济活动影响两种代币需求。',issuance:'AXS 最大发行量 2.7 亿枚，部分 AXS 根据游戏和质押规则释放；SLP 用于游戏奖励和繁育需求。Axie 官方 2025 年宣布调整 AXS 质押奖励发放节奏。',demand:'繁育 Axie 需要 AXS 和 SLP；AXS 也用于生态治理、质押及部分市场活动，社区金库接收市场相关费用。',risk:'如果奖励主要依赖新增玩家或繁育需求增长，用户增长放缓时，奖励抛压、游戏资产供给及真实需求可能失衡。',lesson:'LENDX 存款奖励应按真实到账资金、有效持有天数、净服务收入预算分配；收益数据和实际消费留存比单纯用户数更重要。'},
-ena:{name:'Ethena · USDe 收入与 ENA 治理分离',thesis:'Ethena 的经济核心是 USDe 和其储备/对冲业务；sUSDe 的可变收益头寸与 ENA 治理代币不是同一资产。',issuance:'USDe 是合成美元资产；sUSDe 面向满足条件的用户承接协议相关可变收益。ENA 是治理代币，其锁定/发行与 USDe 收益分开考量。',demand:'2026 年 ENA fee switch 里程碑提案通过治理投票，安排在 USDe 供应规模达到条件时推动 ENA 回购；这是有触发条件的机制，而非保证始终回购或向每位 ENA 持有人固定分红。',risk:'协议收入及收益率依赖市场、资产和对冲条件；回购规模还会受到收入、触发门槛、解锁供给和储备需要影响，不能简单等同币价支撑。',lesson:'LENDX 不应自动享有池子贷款利息。若研究以收入推动回购，应优先覆盖服务成本、信用损失、准备金与可用现金，并设置明确门槛和治理批准。'}
+axie:{name:'Axie Infinity · SLP / AXS 游戏经济双币',thesis:'SLP 与玩家活动和繁育消耗相关，AXS 则用于治理、质押与生态场景；2024 年 SLP 引入 440 亿枚供应上限；游戏人口与经济活动仍决定消耗需求。',issuance:'AXS 最大发行量 2.7 亿枚，部分 AXS 根据游戏和质押规则释放；SLP 用于游戏奖励和繁育需求。Axie 官方 2025 年宣布调整 AXS 质押奖励发放节奏。',demand:'繁育 Axie 需要 AXS 和 SLP；AXS 也用于生态治理、质押及部分市场活动，社区金库接收市场相关费用。',risk:'早期 SLP 发行量超出繁育消耗，产生价格与玩家收入下跌；2024 年 SLP 宣布 440 亿枚供应上限和回购稳定安排，但供需修复仍需要真实游戏需求。',lesson:'LENDX 存款奖励应按真实到账资金、有效持有天数、净服务收入预算分配；收益数据和实际消费留存比单纯用户数更重要。'},
+ena:{name:'Ethena · USDe 收入与 ENA 治理分离',thesis:'Ethena 的经济核心是 USDe 和其储备/对冲业务；sUSDe 的可变收益头寸与 ENA 治理代币不是同一资产。',issuance:'USDe 是合成美元资产；sUSDe 面向满足条件的用户承接协议相关可变收益。ENA 是治理代币，其锁定/发行与 USDe 收益分开考量。',demand:'2026 年 ENA fee switch 已获治理投票通过，首个条件是 USDe 14 日平均供应达到 75 亿美元；截至 2026 年 9 月末 USDe 供应约 49.4 亿美元，尚未达到首个门槛。它是条件性回购，不是自动向每位 ENA 持有人分红。',risk:'协议收入及收益率依赖市场、资产和对冲条件；回购规模还会受到收入、触发门槛、解锁供给和储备需要影响，不能简单等同币价支撑。',lesson:'LENDX 不应自动享有池子贷款利息。若研究以收入推动回购，应优先覆盖服务成本、信用损失、准备金与可用现金，并设置明确门槛和治理批准。'}
 };
 function tmShow(key){
  const d=tmCases[key];if(!d)return;
